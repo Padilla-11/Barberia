@@ -39,12 +39,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animación del botón de agendar
     const btnAgendar = document.querySelector('.btn-agendar');
     
-    if (btnAgendar) {
-        btnAgendar.addEventListener('click', function() {
-            alert('Funcionalidad de agendar cita - Aquí irá el sistema de reservas');
-            // Aquí puedes agregar la lógica para abrir un modal o redirigir a una página de reservas
-        });
-    }
     
     // Cambio de estilo de navbar al hacer scroll
     window.addEventListener('scroll', function() {
@@ -540,4 +534,5 @@ function mostrarNotificacionReservaSimple() {
             notificacionReservaSimple.classList.remove('mostrar');
         }, 4000);
     }
+
 }
