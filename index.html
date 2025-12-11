@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbería - Define tu Look y Eleva tu Confianza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Logo</div>
+            <ul class="nav-menu">
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#productos">PRODUCTOS</a></li>
+                <li><a href="#experiencia">EXPERIENCIA</a></li>
+                <li><a href="#contacto" class="nav-contacto">CONTACTO</a></li>
+            </ul>
+            <div class="nav-icons">
+         <svg class="icon-cart" id="iconCart" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+               <path d="M9 2L7 6h10l-2-4H9z"/>
+              <path d="M3 6h18l-2 13H5L3 6z"/>
+              <circle cx="9" cy="20" r="1"/>
+              <circle cx="15" cy="20" r="1"/>
+            </svg>
+              <span class="cart-badge" id="cartBadge" style="display: none;">0</span>
+            </div>      
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">BARBERIA</h1>
+            <h2 class="hero-subtitle">DEFINE TU LOOK Y ELEVA TU CONFIANZA</h2>
+            <p class="hero-text">Expertos en Cortes Masculinos y Cuidado de Barba.</p>
+            <button class="btn-agendar">AGENDAR CITA</button>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="servicios">
+        <h2 class="servicios-title">Servicios</h2>
+        
+        <div class="servicios-grid">
+            <!-- Servicio 1 - Corte -->
+            <div class="servicio-card">
+                <div class="servicio-image servicio-img-1"></div>
+                <div class="servicio-content">
+                    <p class="servicio-text">
+                        Servicio de corte a tijera y/o máquina. Incluye lavado rápido y styling final. De lo clásico a lo más moderno, confía en nuestros expertos para lograr el estilo que deseas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio 2 - Limpieza Facial -->
+            <div class="servicio-card">
+                <div class="servicio-image servicio-img-2"></div>
+                <div class="servicio-content">
+                    <p class="servicio-text">
+                        ¿Piel apagada o con poros negros? Nuestro tratamiento de limpieza facial está diseñado para el hombre moderno. Aplicamos mascarilla purificante. Piel visiblemente más clara y saludable.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio 3 - Arreglo de Barba -->
+            <div class="servicio-card">
+                <div class="servicio-image servicio-img-3"></div>
+                <div class="servicio-content">
+                    <p class="servicio-text">
+                        Nuestro servicio de arreglo de barba es un ritual de cuidado, no solo la cortamos; la diseñamos para realizar tus facciones. Un servicio que tu barba merece.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Servicio 4 - Productos -->
+            <div class="servicio-card">
+                <div class="servicio-image servicio-img-4"></div>
+                <div class="servicio-content">
+                    <p class="servicio-text">
+                        El secreto de un look duradero es el cuidado diario. En nuestra barbería también ofrecemos las herramientas para mantener la calidad profesional hasta tu próxima visita, explora los product.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de productos CON CARRUSEL -->
+<section id="productos" class="productos">
+    <h2 class="productos-title">Productos</h2>
+    
+    <!-- Carrusel de productos -->
+    <div class="carrusel">
+        <button class="btn-carrusel prev">‹</button>
+        
+        <div class="productos-container">
+            <div class="producto">
+                <div class="producto-image producto-img-1"></div>
+                <div class="producto-content">
+                    <h3 class="producto-nombre">Cera para barba y cabello</h3>
+                    <p class="producto-precio">$35.000</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-image producto-img-2"></div>
+                <div class="producto-content">
+                    <h3 class="producto-nombre">Acondicionador para barba y cabello</h3>
+                    <p class="producto-precio">$28.000</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-image producto-img-3"></div>
+                <div class="producto-content">
+                    <h3 class="producto-nombre">Aceite para el cuidado de la barba</h3>
+                    <p class="producto-precio">$25.000</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-image producto-img-4"></div>
+                <div class="producto-content">
+                    <h3 class="producto-nombre">Barbera clásica acero inoxidable</h3>
+                    <p class="producto-precio">$20.000</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-image producto-img-5"></div>
+                <div class="producto-content">
+                    <h3 class="producto-nombre">Cera para barba y cabello en polvo</h3>
+                    <p class="producto-precio">$40.000</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="producto">
+                <div class="producto-image producto-img-6"></div>
+                <div class="producto-content">
+                    <h3 class="producto-nombre">Brocha negra</h3>
+                    <p class="producto-precio">$12.000</p>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+        
+        <button class="btn-carrusel next">›</button>
+    </div>
+</section>
+
+
+
+
+    <!-- Sección de Experiencias -->
+    <section id="experiencia" class="experiencias">
+        <h2 class="experiencias-title">Experiencias</h2>
+        
+        <div class="experiencias-grid">
+            <div class="exp-item exp-item-1"></div>
+            <div class="exp-item exp-item-2"></div>
+            <div class="exp-item exp-item-3"></div>
+            <div class="exp-item exp-item-4"></div>
+            <div class="exp-item exp-item-5"></div>
+            <div class="exp-item exp-item-6"></div>
+            <div class="exp-item exp-item-7"></div>
+            <div class="exp-item exp-item-8"></div>
+            <div class="exp-item exp-item-9"></div>
+        </div>
+
+        <p class="experiencias-text">
+            Ven y Disfruta de una Experiencia única en cada<br>
+            uno de los servicios que tenemos para ti.
+        </p>
+    </section>
+
+     <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contacto-container">
+            <h2 class="contacto-title">Contacto</h2>
+            
+            <p class="contacto-subtitle">UN BUEN CORTE ES SOLO EL COMIENZO.</p>
+            
+            <p class="contacto-text">
+                Recibe asesoría personalizada, escucha tu música<br>
+                favorita y disfruta de una bebida o snack *gratis<br>
+                durante tu visita.
+            </p>
+            
+            <p class="contacto-garantia">
+                ¿NO TE GUSTO EL RESULTADO? ¡SIN PAGAS!<br>
+                Así de seguros estamos de que te va a gustar
+            </p>
+            
+            <button class="btn-reserva">RESERVA AHORA</button>
+        </div>
+    </section>
+
+    <div class="carrito-overlay" id="carritoOverlay"></div>
+<div class="carrito-panel" id="carritoPanel">
+    <div class="carrito-header">
+        <h3 class="carrito-titulo">MI CARRITO</h3>
+        <button class="carrito-cerrar" id="cerrarCarrito">&times;</button>
+    </div>
+    
+    <div class="carrito-body" id="carritoBody">
+        <div class="carrito-vacio" id="carritoVacio">
+            <div class="carrito-vacio-icono">🛒</div>
+            <p class="carrito-vacio-texto">Tu carrito está vacío</p>
+        </div>
+    </div>
+    
+    <div class="carrito-footer" id="carritoFooter" style="display: none;">
+        <div class="carrito-total">
+            <span class="carrito-total-texto">TOTAL:</span>
+            <span class="carrito-total-precio" id="carritoTotal">$0</span>
+        </div>
+        <div class="carrito-botones">
+            <button class="btn-finalizar" id="btnFinalizar">FINALIZAR COMPRA</button>
+            <button class="btn-vaciar" id="btnVaciar">VACIAR CARRITO</button>
+        </div>
+    </div>
+</div>
+
+<!-- Notificación de compra -->
+<div class="notificacion" id="notificacion">
+    <div class="notificacion-content">
+        <div class="notificacion-icono">✓</div>
+        <div class="notificacion-texto">
+            <h3>¡Compra exitosa!</h3>
+            <p id="notificacion-mensaje"></p>
+        </div>
+    </div>
+</div>
+
+<!-- Agrega esta sección después de la sección de Contacto y antes de los scripts -->
+
+<section id="reserva" class="reserva-seccion" style="display: none;">
+    <div class="reserva-container">
+        <h2 class="reserva-title">RESERVA TU CITA</h2>
+        
+        <form class="form-reserva-simple" id="formReservaSimple">
+            <div class="form-grupo-simple">
+                <label class="form-label-simple">Nombre</label>
+                <input 
+                    type="text" 
+                    class="form-input-simple" 
+                    id="nombreReserva" 
+                    required
+                >
+            </div>
+
+            <div class="form-grupo-simple">
+                <label class="form-label-simple">Teléfono</label>
+                <input 
+                    type="tel" 
+                    class="form-input-simple" 
+                    id="telefonoReserva" 
+                    required
+                >
+            </div>
+
+            <div class="form-grupo-simple">
+                <label class="form-label-simple">Fecha y Hora</label>
+                <input 
+                    type="datetime-local" 
+                    class="form-input-simple" 
+                    id="fechaHoraReserva" 
+                    required
+                >
+                <small class="form-nota">Horario de atención: 7:00 AM - 6:00 PM</small>
+            </div>
+
+            <div class="form-grupo-simple">
+                <label class="form-label-simple">Comentarios (Opcional)</label>
+                <textarea 
+                    class="form-textarea-simple" 
+                    id="comentariosReserva"
+                    placeholder="Cuéntanos qué servicio deseas..."
+                ></textarea>
+            </div>
+
+            <div class="form-botones">
+                <button type="submit" class="btn-enviar-reserva-simple">ENVIAR RESERVA</button>
+                <button type="button" class="btn-cancelar-reserva" id="btnCancelarReserva">CANCELAR</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+<!-- Notificación -->
+<div class="notificacion-reserva-simple" id="notificacionReservaSimple">
+    <div class="notificacion-contenido">
+        <span class="notificacion-icono-simple">✓</span>
+        <div>
+            <strong>¡Reserva exitosa!</strong>
+            <p>Te contactaremos pronto para confirmar tu cita.</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
